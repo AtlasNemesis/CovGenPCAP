@@ -1,0 +1,22 @@
+[project]
+name = "covgen-pcap"
+version = "1.0.0"
+description = "A script to generate PCAP files containing crafted covert channel patterns using Scapy."
+authors = [
+    { name = "Ashley Smith", email = "atlas.nemesis88@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "GNU General Public License v3.0 or later" }
+
+dependencies = [
+    "scapy",
+    "termcolor"
+]
+
+[project.scripts]
+covgen-pcap = "CovGenPCAP:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
